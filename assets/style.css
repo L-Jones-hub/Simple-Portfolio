@@ -12,10 +12,10 @@ nav {
 
 h1 {
    position: relative;
-   right: 800px;
+   right: 700px;
     background-color: #92CACE;
     color: #31343D;
-    font-size: 30px;
+    font-size: 40px;
     padding: 5px 5px 5px 50px;
     font-weight: 500px;
 }
@@ -25,16 +25,21 @@ nav a {
     color: #92CACE;
     text-decoration: none;
     font-weight: 300px;
+    font-size: large;
+       padding: 5px;
+    color:#92CACE;
+    background-image: linear-gradient( #92CACE 0%, #92CACE 100%);
+    background-clip: padding-box;
+    background-repeat: no-repeat;
+    background-size: 100% 0.2em;
+    background-position: bottom;
+     background-position-x: center;
+        background-position-y: bottom;
+    transition: all 0.25s ease-in;
 }
 
-/* Why is the transition not going up? */
-.nav-links {
-    padding: 5px;
-    background-image: linear-gradient(0deg, #92CACE, #92CACE);
-    background-repeat: no-repeat;
-    background-size: 0% 100%;
-    transition: background-size 1s 0s;
-}
+
+
 .nav-links:hover {
 background-size: 100% 100%;
 color:#31343D;
