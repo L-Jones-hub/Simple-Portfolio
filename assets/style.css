@@ -1,0 +1,41 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+nav {
+    display:flex;
+    background-color: #31343D;
+    padding: 20px;
+    justify-content: space-between;
+    justify-content: flex-end;
+}
+
+h1 {
+   position: relative;
+   right: 800px;
+    background-color: #92CACE;
+    color: #31343D;
+    font-size: 30px;
+    padding: 5px 5px 5px 50px;
+    font-weight: 500px;
+}
+
+nav a {
+    margin: 10px;
+    color: #92CACE;
+    text-decoration: none;
+    font-weight: 300px;
+}
+
+/* Why is the transition not going up? */
+.nav-links {
+    padding: 5px;
+    background-image: linear-gradient(0deg, #92CACE, #92CACE);
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    transition: background-size 1s 0s;
+}
+.nav-links:hover {
+background-size: 100% 100%;
+color:#31343D;
+}
