@@ -1,46 +1,99 @@
+:root {
+  --light: #92cace;
+  --dark: #31343d;
+}
+
 * {
-    font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--dark);
 }
 
 nav {
-    display:flex;
-    background-color: #31343D;
-    padding: 20px;
-    justify-content: space-between;
-    justify-content: flex-end;
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+  justify-content: flex-end;
+  align-content: flex-end;
 }
 
 h1 {
-   position: relative;
-   right: 700px;
-    background-color: #92CACE;
-    color: #31343D;
-    font-size: 40px;
-    padding: 5px 5px 5px 50px;
-    font-weight: 500px;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  background-color: var(--light);
+  color: var(--dark);
+  font-size: 40px;
+  padding: 5px 5px 5px 50px;
+  font-weight: 500px;
+}
+
+h2 {
+  display: flex;
+  max-width: fit-content;
+  background-color: var(--light);
+  color: var(--dark);
+  font-size: 30px;
+  padding: 5px 5px 5px 5px;
+  font-weight: 500px;
+  position: absolute;
+  right: 0;
+  top: 380px;
 }
 
 nav a {
-    margin: 10px;
-    color: #92CACE;
-    text-decoration: none;
-    font-weight: 300px;
-    font-size: large;
-       padding: 5px;
-    color:#92CACE;
-    background-image: linear-gradient( #92CACE 0%, #92CACE 100%);
-    background-clip: padding-box;
-    background-repeat: no-repeat;
-    background-size: 100% 0.2em;
-    background-position: bottom;
-     background-position-x: center;
-        background-position-y: bottom;
-    transition: all 0.25s ease-in;
+  margin: 10px;
+  color: var(--light);
+  text-decoration: none;
+  font-weight: 300px;
+  font-size: large;
+  padding: 5px;
+  color: var(--light);
+  background-image: linear-gradient(var(--light) 0%, var(--light) 100%);
+  background-clip: padding-box;
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: bottom;
+  background-position-x: center;
+  background-position-y: bottom;
+  transition: all 0.25s ease-in;
 }
 
-
+aside {
+  text-align: right;
+  font-size: 30px;
+  color: var(--dark);
+  width: 25%;
+  padding-left: 5rem;
+  padding-top: 2rem;
+  float: left;
+  border-right: var(--dark) solid 1px;
+  border-width: thick;
+  padding-right: 12px;
+  height: 200px;
+}
 
 .nav-links:hover {
-background-size: 100% 100%;
-color:#31343D;
+  background-size: 100% 100%;
+  color: var(--dark);
+}
+
+.banner {
+  width: 100%;
+}
+
+.about-me {
+  margin: 20px;
+}
+.about-me p {
+  display: block;
+  width: 65%;
+  float: right;
+  margin-top: 30px;
+  margin-left: 25px;
 }
