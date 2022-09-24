@@ -14,11 +14,8 @@ header {
 }
 
 nav {
-  display: flex;
   padding: 20px;
-  justify-content: space-between;
   justify-content: flex-end;
-  align-content: flex-end;
 }
 
 h1 {
@@ -43,7 +40,7 @@ h2 {
   font-weight: 500px;
   position: absolute;
   right: 0;
-  top: 380px;
+  top: 300px;
 }
 
 nav a {
@@ -65,12 +62,15 @@ nav a {
 }
 
 aside {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1 0 0;
   text-align: right;
   font-size: 30px;
   color: var(--dark);
   width: 25%;
-  padding-left: 5rem;
-  padding-top: 2rem;
+  padding-top: 50px;
   float: left;
   border-right: var(--dark) solid 1px;
   border-width: thick;
@@ -78,22 +78,93 @@ aside {
   height: 200px;
 }
 
+p {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
 .nav-links:hover {
   background-size: 100% 100%;
   color: var(--dark);
 }
 
-.banner {
+.sky {
+  max-height: 300px;
   width: 100%;
+  object-fit: cover;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
 }
 
 .about-me {
-  margin: 20px;
+  display: block;
+  margin-top: 20px;
 }
 .about-me p {
-  display: block;
+  display: flex;
+  flex-direction: row;
   width: 65%;
   float: right;
-  margin-top: 30px;
+  margin-top: 40px;
   margin-left: 25px;
+}
+
+.work {
+  display: block;
+  margin-top: 100px;
+}
+
+.work img {
+  display: flex;
+  flex-direction: row;
+  width: 300px;
+}
+
+.projects {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex: 1 0 0;
+  width: 100%;
+  float: right;
+  margin-top: 40px;
+  margin-left: 25px;
+}
+
+.weather {
+  display: flex;
+  flex-direction: row;
+  flex: 2 0 0;
+}
+
+.contact-links {
+  margin: 40px;
+  color: var(--light);
+  text-decoration: none;
+  font-weight: 300px;
+  font-size: large;
+  padding: 10px;
+  color: var(--dark);
+  background-image: linear-gradient(var(--dark) 0%, var(--dark) 100%);
+  background-clip: padding-box;
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: bottom;
+  background-position-x: center;
+  background-position-y: bottom;
+  transition: all 0.25s ease-in;
+}
+
+.contact-links:hover {
+  background-size: 100% 100%;
+  color: var(--light);
+}
+
+.contact {
+  margin-bottom: 50px;
 }
