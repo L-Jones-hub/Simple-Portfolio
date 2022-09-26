@@ -14,20 +14,23 @@ header {
 }
 
 nav {
+  display: flex;
   padding: 20px;
   justify-content: flex-end;
+  margin: 0 auto;
+  margin-right: 0px;
 }
 
 h1 {
   display: flex;
   justify-content: flex-start;
   flex-wrap: nowrap;
-  justify-content: flex-start;
   background-color: var(--light);
   color: var(--dark);
   font-size: 40px;
   padding: 5px 5px 5px 50px;
   font-weight: 500px;
+  align-items: center;
 }
 
 h2 {
@@ -44,6 +47,8 @@ h2 {
 }
 
 nav a {
+  display: flex;
+  flex: none;
   margin: 10px;
   color: var(--light);
   text-decoration: none;
@@ -105,6 +110,7 @@ p {
   display: block;
   margin-top: 20px;
 }
+
 .about-me p {
   display: flex;
   flex-direction: row;
@@ -112,37 +118,43 @@ p {
   float: right;
   margin-top: 40px;
   margin-left: 25px;
+  margin-right: 25px;
 }
 
 .work {
   display: block;
   margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 .work img {
+  margin: 20px;
+
   display: flex;
   flex-direction: row;
   width: 300px;
 }
 
+.work img:hover {
+  box-shadow: inset 0px 0px 8px var(--light), 0 0 15px var(--light);
+}
+
 .projects {
   display: flex;
-  flex-direction: row;
+  justify-content: center;
   flex-wrap: wrap;
-  flex: 1 0 0;
-  width: 100%;
-  float: right;
-  margin-top: 40px;
-  margin-left: 25px;
 }
 
 .weather {
   display: flex;
   flex-direction: row;
   flex: 2 0 0;
+  min-height: 400px;
+  flex-basis: 100%;
+  padding: 10px;
 }
 
-.contact-links {
+.contact a {
   margin: 40px;
   color: var(--light);
   text-decoration: none;
@@ -158,6 +170,7 @@ p {
   background-position-x: center;
   background-position-y: bottom;
   transition: all 0.25s ease-in;
+  line-height: 40px;
 }
 
 .contact-links:hover {
@@ -167,4 +180,8 @@ p {
 
 .contact {
   margin-bottom: 50px;
+}
+.contact div {
+  text-align: center;
+  margin-top: 5%;
 }
