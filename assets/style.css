@@ -127,9 +127,12 @@ p {
   margin-bottom: 100px;
 }
 
+.work aside {
+  height: 850px;
+}
+
 .work img {
   margin: 20px;
-
   display: flex;
   flex-direction: row;
   width: 300px;
@@ -150,6 +153,7 @@ p {
   flex-direction: row;
   flex: 2 0 0;
   min-height: 400px;
+  min-width: 650px;
   flex-basis: 100%;
   padding: 10px;
 }
@@ -184,4 +188,11 @@ p {
 .contact div {
   text-align: center;
   margin-top: 5%;
+}
+
+@media screen and (max-width: 768px) {
+  .weather {
+    min-height: 169.391px;
+    min-width: 300px;
+  }
 }
