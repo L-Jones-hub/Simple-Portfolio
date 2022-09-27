@@ -1,6 +1,6 @@
 # challengeTwoUT
 
-<a href="https://l-jones-hub.github.io/challengeTwoUT/#contact-section" title="" target="_blank">Deployed Site</a>
+<a href="https://l-jones-hub.github.io/challengeTwoUT/" title="" target="_blank">Deployed Site</a>
 
 ## Description
 
