@@ -1,4 +1,4 @@
-# challengeTwoUT
+# Simple Portfolio
 
 <a href="https://l-jones-hub.github.io/challengeTwoUT/" title="" target="_blank">Deployed Site</a>
 
