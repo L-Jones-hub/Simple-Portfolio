@@ -1,6 +1,6 @@
 # Simple Portfolio
 
-<a href="https://l-jones-hub.github.io/challengeTwoUT/" title="" target="_blank">Deployed Site</a>
+<a href="https://l-jones-hub.github.io/Simple-Portfolio/" title="" target="_blank">Deployed Site</a>
 
 ## Description
 
